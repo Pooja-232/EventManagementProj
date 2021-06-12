@@ -1,0 +1,39 @@
+<p>search-by-id-event works!</p>
+
+<form #searchEvent="ngForm" (ngSubmit)="search(searchEvent.value)">
+
+    <input type="text" name="eventID" ngModel/>
+    <input type="submit" value="Search"  />
+    <br/>
+    <label>Enter Event ID</label>
+    <input type="text" name="eventid" ngModel [(ngModel)]="eventid"/>
+        <br/>
+    <label>Event Name </label>
+    <input type="text" name="eventname" ngModel [(ngModel)]="eventname" />
+    <br/>
+    <label> Enter Date: </label>
+    <input type="text"  name="date"  ngModel [(ngModel)]="date"/>
+    <br/>
+    <label>Enter Location: </label>
+    <input type="text"  name="location" ngModel [(ngModel)]="location"/>
+    <br/>
+    <label>Enter Duration : </label>
+    <input type="text"  name="duration" ngModel [(ngModel)]="duration"/>
+    <br/>
+    <label>Enter Description: </label>
+    <input type="text"  name="description" ngModel [(ngModel)]="description"/>
+    <br/>
+    <label>Enter Amount: </label>
+    <input type="text"  name="amount" ngModel [(ngModel)]="amount"/>
+    <br/>
+    <label>contactNumber: </label>
+    <input type="text"  name="contactnumber" ngModel [(ngModel)]="contactnumber"/>
+    <br/>
+    <label>speaker Name: </label>
+    <input type="text"  name="speakername" ngModel [(ngModel)]="speakername"/>
+    <br/>
+    <label>Enter speaker Email: </label>
+    <input type="text"  name="speakeremail" ngModel [(ngModel)]="speakeremail"/>
+    <br/>
+    
+    

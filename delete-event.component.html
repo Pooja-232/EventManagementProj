@@ -1,0 +1,8 @@
+<p>delete-event works!</p>
+
+<form #deleteEvent="ngForm" (ngSubmit)="btnclick(deleteEvent.value)">
+
+    <input type="text" name="eventID"  ngModel [(ngModel)]="eventID"/>
+    <input type="submit" value="Delete"  />
+
+</form>

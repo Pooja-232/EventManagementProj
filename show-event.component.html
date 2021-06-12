@@ -1,0 +1,34 @@
+<p>show-event works!</p>
+
+<button (click)="showlist()">ShowEvent</button>
+<table>
+    <thead><tr>
+        
+        <td>eventid</td>
+        <td>eventname</td>
+        <td>date</td>
+        <td>location</td>
+        <td>duration</td>
+        <td>description</td>
+        <td>amount</td>
+        <td>contactnumber</td>
+        <td>speakername</td>
+        <td>speakeremail</td>
+    
+    </tr>
+</thead>
+    <tbody>
+        <tr *ngFor="let ed of eventcdata">
+            <td>{{ed.eventid}}</td>
+            <td>{{ed.eventname}}</td>
+            <td>{{ed.date}}</td>
+            <td>{{ed.location}}</td>
+            <td>{{ed.duration}}</td>
+            <td>{{ed.description}}</td>
+            <td>{{ed.amount}}</td>
+            <td>{{ed.contactnumber}}</td>
+            <td>{{ed.speakername}}</td>
+            <td>{{ed.speakeremail}}</td>
+        </tr>
+    </tbody>
+</table>
