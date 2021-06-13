@@ -1,0 +1,107 @@
+<p>participant-dashboard works!</p>
+
+
+<!-- <p>Speaker Email Id:{{speaker.speakeremailid}}</p>
+<p>Speaker Name:{{speaker.speakername}}</p>
+<p>Speaker Mobile:{{speaker.contactnumber}}</p>
+<p>Speaker City:{{speaker.city}}</p>
+<p>Event Assigned:{{speaker.event}}</p>
+<p>Number participants:{{speaker.numberofparticipants}}</p>
+<p>Feedback:{{speaker.Feedback}}</p> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Table V04</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<!-- <link rel="icon" type="image/png" href="images/icons/favicon.ico"/> -->
+<!--===============================================================================================-->
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+<!--===============================================================================================-->
+	<!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+<!--===============================================================================================-->
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css"> -->
+<!--===============================================================================================-->
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css"> -->
+<!--===============================================================================================-->
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css"> -->
+<!--===============================================================================================-->
+	<!-- <link rel="stylesheet" type="text/css" href="css/util.css"> -->
+	<link rel="stylesheet" type="text/css" href="participant-dashboard.component.css">
+<!--===============================================================================================-->
+</head>
+<div class="background">
+
+	
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table >
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Participant User EmailId</th>
+									<th class="cell100 column2">Participant Password</th>
+									<th class="cell100 column3">Participant Name</th>
+									<th class="cell100 column4">Participant City</th>
+									<th class="cell100 column5">Participant Gender</th>
+                                    <th class="cell100 column6">Participant ContactNumber</th>
+                                    <th class="cell100 column7">Participant EventName</th>
+                                    <th class="cell100 column7">Participant EventId</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table >
+							<tbody>
+								<tr class="row100 body">
+									<td class="cell100 column1">{{participant.useremailid}}</td>
+									<td class="cell100 column2">{{participant.password}}</td>
+									<td class="cell100 column3">{{participant.name}}</td>
+									<td class="cell100 column4">{{participant.city}}</td>
+									<td class="cell100 column5">{{participant.gender}}</td>
+                                    <td class="cell100 column6">{{participant.contactnumber}}</td>
+                                    <td class="cell100 column7">{{participant.eventname}}</td>
+                                    <td class="cell100 column7">{{participant.eventid}}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div> 
+</div>
+<p> Feedback Form! </p>
+<div class="container">
+
+    <form >
+  
+      <label for="EvenId">Enter EventId </label>
+      <input type="text" id="eventid" name="eventid" placeholder="Your Id..">
+  
+      <label for="eventname">Enter EventName</label>
+      <input type="text" id="eventname" name="eventname" placeholder="Your event name..">
+  
+      <label for="Feedback">Feedback</label>
+      <select id="feedback" name="feedback">
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="bad">Bad</option>
+        <option value="average">Average</option>
+      </select>
+  
+      <label for="additionalcomments">Additional Comments</label>
+      <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+</html>
