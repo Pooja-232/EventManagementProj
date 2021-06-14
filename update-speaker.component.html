@@ -1,0 +1,24 @@
+<p>update-speaker works!</p>
+
+<label>Enter Speaker Id</label>
+<input type="number" name="speakerid" [(ngModel)]="speakerid">
+<button (click)="search()" >search</button>
+<hr>
+<form #addspeaker="ngForm" (ngSubmit)="savechanges(addspeaker.value)">
+    <label>Enter Speaker ID</label> 
+        <input type="text" name="speakerid" ngModel  [(ngModel)]="speakerid"/>
+            <br/>
+        <label> Enter SpeakerName </label>
+        <input type="text" name="speakername" ngModel [(ngModel)]="speakername" />
+        <br/>
+        <label>Enter Password: </label>
+        <input type="text"  name="password"  ngModel [(ngModel)]="password"/>
+        <br/>
+        <label>Enter Skills: </label>
+        <input type="text"  name="skills"  ngModel [(ngModel)]="skills"/>
+        <br/>
+        <label>Enter contactnumber: </label>
+        <input type="number"  name="contactnumber"  ngModel [(ngModel)]="contactnumber"/>
+
+      <button type="submit">Update Event</button>
+        </form>
