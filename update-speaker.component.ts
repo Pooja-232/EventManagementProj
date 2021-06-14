@@ -10,10 +10,10 @@ import { ApicallService } from 'src/app/apicall.service';
 })
 export class UpdateSpeakerComponent implements OnInit {
 
-  speakerid:number=0;
+ 
   data:any=[]
   constructor(private http : HttpClient,private apicallService:ApicallService) { }
-  speakerid:number=0;
+  speakerid:string="";
   speakername:string="";
   password:string="";
   skills:string="";
@@ -48,7 +48,7 @@ savechanges(event:any)
   sp.speakername=event.speakername;
   sp.password=event.password;
   sp.skills=event.skills;
-  sp.Contactnumber=event.contactnumber
+  sp.contactnumber=event.contactnumber
   
 // alert(supplier.SupplierID);
 // alert(supplier.ContactName);
@@ -58,4 +58,14 @@ this.apicallService.putspeakerData(this.speakerid,sp);
 
 
 }
+
+
+}
+export class Speaker{
+  speakerid:number=0;
+  speakername:string="";
+  password:string="";
+  skills:string="";
+  contactnumber:string="";
+
 }
